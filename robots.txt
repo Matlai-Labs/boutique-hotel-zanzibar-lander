@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# All pages carry meta robots noindex,follow + X-Robots-Tag (per meta tag).
+# Intentionally no sitemap — this is a paid-ads lander, not for organic discovery.

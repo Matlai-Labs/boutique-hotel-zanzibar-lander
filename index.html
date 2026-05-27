@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, follow, noarchive">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="facebook-domain-verification" content="pg9pnmydlcaeg2cr697ulvvv0x7x3h" />
+<title>Boutique Hotel Matlai · Two Private Villas on Pingwe Beach, Zanzibar</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boutique-hotel-zanzibar.com/">
+<meta property="og:title" content="Boutique Hotel Matlai · Two Private Villas on Pingwe Beach, Zanzibar">
+<meta property="og:description" content="Two private villas on Pingwe Beach, Zanzibar. Six rooms, twelve guests at most. Run like one Matlai family since 2012.">
+<meta property="og:image" content="https://boutique-hotel-zanzibar.com/media/drone-hero-poster.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:site_name" content="Boutique Hotel Matlai">
+<style>
+  html,body{margin:0;padding:0;background:#0d1117;color:#fff;font-family:Georgia,serif;height:100%;overflow:hidden}
+  .splash{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px}
+  .logo{font-size:32px;letter-spacing:.28em;color:#c9a96e}
+  .sub{font-size:11px;letter-spacing:.35em;color:rgba(255,255,255,.5);font-family:-apple-system,sans-serif;font-weight:400}
+  .spinner{width:24px;height:24px;border:1px solid rgba(255,255,255,.15);border-top-color:#c9a96e;border-radius:50%;animation:spin .9s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  noscript .splash::after{content:"Loading the English version…";color:rgba(255,255,255,.7);font-family:-apple-system,sans-serif;font-size:13px;letter-spacing:.1em}
+</style>
+<script>
+  // ============================================================
+  // SMART LANGUAGE AUTO-REDIRECT
+  // ============================================================
+  // 1. URL override:    ?lang=de   →   forces German
+  // 2. Browser language: navigator.language → matched against our 6 supported langs
+  // 3. Fallback:        English (the largest international audience)
+  //
+  // Meta ads should target language-specific URLs directly when possible:
+  //    https://boutique-hotel-zanzibar.com/?lang=de
+  // The ?lang param survives the redirect via sessionStorage so analytics still
+  // attribute correctly. UTMs are preserved on the redirect target URL.
+  // ============================================================
+  (function() {
+    var SUPPORTED = ['en','de','es','fr','it','pl'];
+    var DEFAULT_LANG = 'en';
+
+    // Parse URL params
+    var params = new URLSearchParams(window.location.search);
+    var override = (params.get('lang') || '').toLowerCase();
+
+    // Detect browser language
+    var browserLang = (navigator.language || navigator.userLanguage || DEFAULT_LANG).slice(0,2).toLowerCase();
+    var browserLangs = (navigator.languages || [navigator.language || DEFAULT_LANG]).map(function(l){ return l.slice(0,2).toLowerCase(); });
+
+    // Decide target language
+    var target = DEFAULT_LANG;
+    if (SUPPORTED.indexOf(override) !== -1) {
+      target = override;
+    } else {
+      for (var i=0; i<browserLangs.length; i++) {
+        if (SUPPORTED.indexOf(browserLangs[i]) !== -1) {
+          target = browserLangs[i];
+          break;
+        }
+      }
+    }
+
+    // Preserve UTM params + any other query params (except ?lang which we just used)
+    params.delete('lang');
+    var qs = params.toString();
+    var separator = qs ? '?' + qs : '';
+
+    // Redirect — use replace so the chooser doesn't appear in browser history
+    var dest = 'index.' + target + '.html' + separator + window.location.hash;
+    window.location.replace(dest);
+  })();
+</script>
+</head>
+<body>
+  <div class="splash">
+    <div class="logo">MATLAI</div>
+    <div class="sub">BOUTIQUE HOTEL · ZANZIBAR</div>
+    <div class="spinner" aria-hidden="true"></div>
+  </div>
+  <noscript>
+    <div class="splash">
+      <div class="logo">MATLAI</div>
+      <div class="sub">BOUTIQUE HOTEL · ZANZIBAR</div>
+      <a href="index.en.html" style="color:#c9a96e;text-decoration:none;font-family:-apple-system,sans-serif;font-size:13px;letter-spacing:.2em">ENTER →</a>
+    </div>
+  </noscript>
+</body>
+</html>
